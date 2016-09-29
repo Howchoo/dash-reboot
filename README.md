@@ -8,5 +8,5 @@ Basic setup instructions are below; I've also written a more detailed post on [r
 2. Install [node-dash-button](https://github.com/hortinstein/node-dash-button) and find your Dash Button's device/hardware address.
 3. Create a reboot shell script containing `sudo reboot` and save as `/usr/local/bin/reboot.sh`.
 4. Install dash-reboot into `node_modules/node-dash-button/dash-reboot.js`.
-5. Use crontab to run the node script as sudo on system start.
+5. Install [Supervisor](https://github.com/Supervisor/supervisor) and configure it to run the node script at startup.
 6. Use the Dash Button to reboot your Pi!
